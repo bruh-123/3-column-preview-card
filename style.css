@@ -20,8 +20,6 @@
 }
 body {
 	height: auto;
-	/* width: 375px; */
-	border: solid 1px;
 	background-color: var(--VeryLightGray);
 	display: flex;
 	flex-direction: column;
@@ -33,7 +31,6 @@ body {
 .card {
 	display: flex;
 	flex-direction: column;
-	background-color: blueviolet;
 	border-radius: 10px;
 	overflow: hidden;
 	width: 340px;
@@ -43,7 +40,6 @@ body {
 }
 
 .car-card {
-	border: solid 1px;
 	padding: 3rem;
 }
 
