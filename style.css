@@ -20,7 +20,7 @@
 }
 body {
 	height: auto;
-	width: 375px;
+	/* width: 375px; */
 	border: solid 1px;
 	background-color: var(--VeryLightGray);
 	display: flex;
@@ -67,7 +67,7 @@ p {
 	font-family: "Lexend Deca", sans-serif;
 }
 
-button {
+input {
 	background-color: var(--VeryLightGray);
 	font-family: "Lexend Deca", sans-serif;
 	padding: 1rem;
@@ -76,10 +76,26 @@ button {
 	border-radius: 25px;
 	margin-top: 1rem;
 	border: none;
+	cursor: pointer;
+}
+.button1 {
+	color: var(--BrigthOrange);
+}
+.button2 {
+	color: var(--DarkCyan);
+}
+.button3 {
+	color: var(--VeryDarkCyan);
 }
 
-button:hover {
+input:hover {
 	background-color: var(--VeryLightGrayHover);
+}
+
+input:active {
+	background-color: transparent;
+	box-shadow: 0px 0px 0px 2px white inset;
+	color: white;
 }
 
 .sedans {
