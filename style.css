@@ -28,6 +28,17 @@ body {
 	font-size: 15px;
 }
 
+.sr-only {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	padding: 0;
+	margin: -1;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -47,7 +58,7 @@ img {
 	margin-bottom: 0.75rem;
 }
 
-h1 {
+h2 {
 	margin-top: 0.75rem;
 	margin-bottom: 1.75rem;
 	color: var(--VeryLightGray);
@@ -63,7 +74,7 @@ p {
 	line-height: 25px;
 }
 
-input {
+a.button {
 	background-color: var(--VeryLightGray);
 	font-family: "Lexend Deca", sans-serif;
 	padding: 1rem;
@@ -73,22 +84,23 @@ input {
 	margin-top: 1rem;
 	border: none;
 	cursor: pointer;
+	text-decoration: none;
 }
-.button1 {
+.car1 {
 	color: var(--BrigthOrange);
 }
-.button2 {
+.car2 {
 	color: var(--DarkCyan);
 }
-.button3 {
+.car3 {
 	color: var(--VeryDarkCyan);
 }
 
-input:hover {
+a:hover {
 	background-color: var(--VeryLightGrayHover);
 }
 
-input:active {
+a:active {
 	background-color: transparent;
 	box-shadow: 0px 0px 0px 2px white inset;
 	color: white;
@@ -114,12 +126,12 @@ input:active {
 	color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1240px){
-	.card{
+@media (min-width: 1240px) {
+	.card {
 		flex-direction: row;
 		width: 67%;
 	}
-	p{
+	p {
 		margin-bottom: 4rem;
 	}
 }
